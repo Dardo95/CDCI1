@@ -112,6 +112,7 @@
 						
 						</layout:Grid>
 						<!--Fin 3º línea-->
+<<<<<<< Upstream, based on 3c512041084fe1b4c371cf79d60b031bb4623608
 
 						
 							<!--4º linea-->
@@ -164,6 +165,62 @@
 						</layout:Grid>
 						<!--Fin 5º línea-->
 
+=======
+<<<<<<< Upstream, based on 58e039b04357cbbe6c8675c94739eb6fd3b62383
+>>>>>>> fd89a4f 1
+=======
+						
+							<!--4º linea-->
+						<layout:Grid defaultSpan="XL3 L6 M6 S12">
+						
+						<layout:VerticalLayout>
+							<Label text="Fecha Comité: Desde"/>
+							<Select id="slName13" width="150px" forceSelection="true" change="onSelectChange" items="{ path: '/ProductNames' }">
+								<core:Item key="{key}" text="{name}"/>
+							</Select>
+						</layout:VerticalLayout>
+						<layout:VerticalLayout>
+							<Label text="Importe: Desde"/>
+							<Select id="slName14" width="150px" forceSelection="true" change="onSelectChange" items="{ path: '/ProductNames' }">
+								<core:Item key="{key}" text="{name}"/>
+							</Select>
+						</layout:VerticalLayout>
+						<layout:VerticalLayout>
+							<Label text="Plazo de vigencia: Desde"/>
+							<Select id="slName15" width="150px" forceSelection="true" change="onSelectChange" items="{ path: '/ProductNames' }">
+								<core:Item key="{key}" text="{name}"/>
+							</Select>
+						</layout:VerticalLayout>
+						
+						</layout:Grid>
+						<!--Fin 4º línea-->
+						
+										<!--5º linea-->
+						<layout:Grid defaultSpan="XL3 L6 M6 S12">
+						
+						<layout:VerticalLayout>
+							<Label text="Hasta"/>
+							<Select id="slName16" width="150px" forceSelection="true" change="onSelectChange" items="{ path: '/ProductNames' }">
+								<core:Item key="{key}" text="{name}"/>
+							</Select>
+						</layout:VerticalLayout>
+						<layout:VerticalLayout>
+							<Label text="Hasta"/>
+							<Select id="slName17" width="150px" forceSelection="true" change="onSelectChange" items="{ path: '/ProductNames' }">
+								<core:Item key="{key}" text="{name}"/>
+							</Select>
+						</layout:VerticalLayout>
+						<layout:VerticalLayout>
+							<Label text="Hasta"/>
+							<Select id="slName18" width="150px" forceSelection="true" change="onSelectChange" items="{ path: '/ProductNames' }">
+								<core:Item key="{key}" text="{name}"/>
+							</Select>
+						</layout:VerticalLayout>
+						
+						</layout:Grid>
+						<!--Fin 5º línea-->
+>>>>>>> d8ef945 seguridad
+>>>>>>> 49b11eb seguridad
 					
 					
 					</f:content>
