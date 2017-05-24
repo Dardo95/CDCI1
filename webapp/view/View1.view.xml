@@ -1,5 +1,5 @@
 <mvc:View controllerName="CDCI1.controller.View1" height="100%" xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core"
-	xmlns:layout="sap.ui.layout" xmlns="sap.m" xmlns:f="sap.f">
+	xmlns:layout="sap.ui.layout" xmlns="sap.m" xmlns:f="sap.f" xmlns:t="sap.ui.table">
 	<f:DynamicPage id="dynamicPageId" headerExpanded="{/headerExpanded}" toggleHeaderOnTitleClick="{/titleClickable}">
 		<!-- DynamicPage Title -->
 		<f:title>
@@ -36,9 +36,10 @@
 					<layout:Grid defaultSpan="XL4 L6 M6 S12">
 						<layout:VerticalLayout>
 							<Label text="Name:"/>
-							<Select id="slName" width="200px" forceSelection="true" change="onSelectChange" items="{ path: '/ProductNames' }">
-								<core:Item key="{key}" text="{name}"/>
-							</Select>
+							<MultiComboBox width="200px"
+						items="{ path: '{vuelos>/FLISet}' }">
+						<core:ListItem text="{vuelos>Carrid}"/>
+					</MultiComboBox>
 						</layout:VerticalLayout>
 						<layout:VerticalLayout>
 							<Label text="Name:"/>
@@ -62,6 +63,31 @@
 				</f:content>
 			</f:DynamicPageHeader>
 		</f:header>
+		<!-- DynamicPage Content -->
+		<f:content>
+			<t:Table rows="{vuelos>/FLIGHTSet}" title="Vuelos" selectionMode="MultiToggle" visibleRowCount="356">
+						<t:columns>
+							<t:Column width="11rem">
+								<Label text="Carrid"/>
+								<t:template>
+									<Text text="{vuelos>Carrid}"/>
+								</t:template>
+							</t:Column>
+							<t:Column width="11rem">
+								<Label text="Connid"/>
+								<t:template>
+									<Text text="{vuelos>Connid}"/>
+								</t:template>
+							</t:Column>
+							<t:Column width="11rem">
+								<Label text="Fldate"/>
+								<t:template>
+									<Text text="{vuelos>Fldate}"/>
+								</t:template>
+							</t:Column>
+						</t:columns>
+					</t:Table>
+		</f:content>
 	</f:DynamicPage>
 	<!--	<ObjectPageLayout id="ObjectPageLayout" enableLazyLoading="false" showTitleInHeaderContent="false">
 		<headerTitle>
