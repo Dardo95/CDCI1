@@ -229,17 +229,18 @@
 			</t:Table>
 		</f:content>
 	</f:DynamicPage>
-	<!--	<ObjectPageLayout id="ObjectPageLayout" enableLazyLoading="false" showTitleInHeaderContent="false">
+ 
 		<headerTitle>
 			<ObjectPageHeader objectTitle="{i18n>title}">
-				<ObjectPageHeaderContent></ObjectPageHeaderContent>
 				<actions>
 					<layout:HorizontalLayout>
 						<m:Text text="{i18n>usuario}:"/>
 						<m:Text text="Nombre/apellidos"/>
-						<m:Text text="{i18n>hora}:"/>
-						<m:Text text="hh:mm"/>
 					</layout:HorizontalLayout>
+					<layout:HorizontalLayout>
+							<m:Text text="{i18n>Fecha Actual}:"/>
+							<m:Text text="hh:mm"/>
+						</layout:HorizontalLayout>
 				</actions>
 			</ObjectPageHeader>
 		</headerTitle>
@@ -252,7 +253,6 @@
 					<m:Text text="1000"/>
 				</layout:HorizontalLayout>
 			</layout:VerticalLayout>
-			<layout:VerticalLayout></layout:VerticalLayout>
 		</headerContent>
 
 	</ObjectPageLayout>-->
