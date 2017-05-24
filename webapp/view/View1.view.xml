@@ -34,15 +34,14 @@
 		<f:header>
 			<f:DynamicPageHeader pinnable="true">
 				<f:content>
-<<<<<<< Upstream, based on 5941849d6163bf710042cb339e0dfe0f73ab9fc8
-					
-=======
 					<layout:Grid defaultSpan="XL3 L6 M6 S12">
 						<layout:VerticalLayout>
-							<Label text="Nº Comité"/>
-							<Select id="slName" width="150px" forceSelection="true" change="onSelectChange" items="{ path: '/ProductNames' }">
-								<core:Item key="{key}" text="{name}"/>
-							</Select>
+
+							<Label text="Nº Comité  :"/>
+							<MultiComboBox width="150px"
+						items="{ path: '{vuelos>/FLISet}' }">
+						<core:ListItem text="{vuelos>Carrid}"/>
+					</MultiComboBox>
 						</layout:VerticalLayout>
 						<layout:VerticalLayout>
 							<Label text="Fecha Comité:"/>
@@ -68,25 +67,25 @@
 						<layout:Grid defaultSpan="XL3 L6 M6 S12">
 						
 						<layout:VerticalLayout>
-							<Label text="Nº Comité"/>
+							<Label text="Tipo de Asignación"/>
 							<Select id="slName5" width="150px" forceSelection="true" change="onSelectChange" items="{ path: '/ProductNames' }">
 								<core:Item key="{key}" text="{name}"/>
 							</Select>
 						</layout:VerticalLayout>
 						<layout:VerticalLayout>
-							<Label text="Fecha Comité:"/>
+							<Label text="Naturaleza"/>
 							<Select id="slName6" width="150px" forceSelection="true" change="onSelectChange" items="{ path: '/ProductNames' }">
 								<core:Item key="{key}" text="{name}"/>
 							</Select>
 						</layout:VerticalLayout>
 						<layout:VerticalLayout>
-							<Label text="Tipo de Expediente"/>
+							<Label text="Ámbito"/>
 							<Select id="slName7" width="150px" forceSelection="true" change="onSelectChange" items="{ path: '/ProductNames' }">
 								<core:Item key="{key}" text="{name}"/>
 							</Select>
 						</layout:VerticalLayout>
 						<layout:VerticalLayout>
-							<Label text="Tipo de Procedimiento"/>
+							<Label text="Proyecto/Prop. Inversión"/>
 							<Select id="slName8" width="150px" forceSelection="true" change="onSelectChange" items="{ path: '/ProductNames' }">
 								<core:Item key="{key}" text="{name}"/>
 							</Select>
@@ -113,7 +112,58 @@
 						
 						</layout:Grid>
 						<!--Fin 3º línea-->
->>>>>>> fd89a4f 1
+
+						
+							<!--4º linea-->
+						<layout:Grid defaultSpan="XL3 L6 M6 S12">
+						
+						<layout:VerticalLayout>
+							<Label text="Fecha Comité: Desde"/>
+							<Select id="slName13" width="150px" forceSelection="true" change="onSelectChange" items="{ path: '/ProductNames' }">
+								<core:Item key="{key}" text="{name}"/>
+							</Select>
+						</layout:VerticalLayout>
+						<layout:VerticalLayout>
+							<Label text="Importe: Desde"/>
+							<Select id="slName14" width="150px" forceSelection="true" change="onSelectChange" items="{ path: '/ProductNames' }">
+								<core:Item key="{key}" text="{name}"/>
+							</Select>
+						</layout:VerticalLayout>
+						<layout:VerticalLayout>
+							<Label text="Plazo de vigencia: Desde"/>
+							<Select id="slName15" width="150px" forceSelection="true" change="onSelectChange" items="{ path: '/ProductNames' }">
+								<core:Item key="{key}" text="{name}"/>
+							</Select>
+						</layout:VerticalLayout>
+						
+						</layout:Grid>
+						<!--Fin 4º línea-->
+						
+										<!--5º linea-->
+						<layout:Grid defaultSpan="XL3 L6 M6 S12">
+						
+						<layout:VerticalLayout>
+							<Label text="Hasta"/>
+							<Select id="slName16" width="150px" forceSelection="true" change="onSelectChange" items="{ path: '/ProductNames' }">
+								<core:Item key="{key}" text="{name}"/>
+							</Select>
+						</layout:VerticalLayout>
+						<layout:VerticalLayout>
+							<Label text="Hasta"/>
+							<Select id="slName17" width="150px" forceSelection="true" change="onSelectChange" items="{ path: '/ProductNames' }">
+								<core:Item key="{key}" text="{name}"/>
+							</Select>
+						</layout:VerticalLayout>
+						<layout:VerticalLayout>
+							<Label text="Hasta"/>
+							<Select id="slName18" width="150px" forceSelection="true" change="onSelectChange" items="{ path: '/ProductNames' }">
+								<core:Item key="{key}" text="{name}"/>
+							</Select>
+						</layout:VerticalLayout>
+						
+						</layout:Grid>
+						<!--Fin 5º línea-->
+
 					
 					
 					</f:content>
