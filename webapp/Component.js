@@ -22,6 +22,21 @@ sap.ui.define([
 
 			// set the device model
 			this.setModel(models.createDeviceModel(), "device");
+		/*	var mConfig = this.getMetadata().getConfig();*/
+			var sServiceUrl = this.getMetadata().getManifestEntry("sap.app").dataSources.z001_hello_world_srv_01.uri;
+
+			// Create and set domain model to the component
+			var oModel = new sap.ui.model.odata.ODataModel(sServiceUrl, {
+				json: true,
+				user: "ZUNISYS01",
+				password: "ZUNISYS01",
+				loadMetadataAsync: true
+			});
+			oModel.attachMetadataFailed(function() {
+				this.getEventBus().publish("Component", "MetadataFailed");
+			}, this);
+			this.setModel(oModel, "vuelos");
+		
 		}
 	});
 });
