@@ -34,9 +34,6 @@
 		<f:header>
 			<f:DynamicPageHeader pinnable="true">
 				<f:content>
-<<<<<<< Upstream, based on 5941849d6163bf710042cb339e0dfe0f73ab9fc8
-					
-=======
 					<layout:Grid defaultSpan="XL3 L6 M6 S12">
 						<layout:VerticalLayout>
 
@@ -115,9 +112,7 @@
 						
 						</layout:Grid>
 						<!--Fin 3º línea-->
-<<<<<<< Upstream, based on 58e039b04357cbbe6c8675c94739eb6fd3b62383
->>>>>>> fd89a4f 1
-=======
+
 						
 							<!--4º linea-->
 						<layout:Grid defaultSpan="XL3 L6 M6 S12">
@@ -168,9 +163,7 @@
 						
 						</layout:Grid>
 						<!--Fin 5º línea-->
->>>>>>> d8ef945 seguridad
-					
-					
+
 					</f:content>
 			</f:DynamicPageHeader>
 		</f:header>
