@@ -34,7 +34,85 @@
 		<f:header>
 			<f:DynamicPageHeader pinnable="true">
 				<f:content>
+<<<<<<< Upstream, based on 5941849d6163bf710042cb339e0dfe0f73ab9fc8
 					
+=======
+					<layout:Grid defaultSpan="XL3 L6 M6 S12">
+						<layout:VerticalLayout>
+							<Label text="Nº Comité"/>
+							<Select id="slName" width="150px" forceSelection="true" change="onSelectChange" items="{ path: '/ProductNames' }">
+								<core:Item key="{key}" text="{name}"/>
+							</Select>
+						</layout:VerticalLayout>
+						<layout:VerticalLayout>
+							<Label text="Fecha Comité:"/>
+							<Select id="slName4" width="150px" forceSelection="true" change="onSelectChange" items="{ path: '/ProductNames' }">
+								<core:Item key="{key}" text="{name}"/>
+							</Select>
+						</layout:VerticalLayout>
+						<layout:VerticalLayout>
+							<Label text="Tipo de Expediente"/>
+							<Select id="slName2" width="150px" forceSelection="true" change="onSelectChange" items="{ path: '/ProductNames' }">
+								<core:Item key="{key}" text="{name}"/>
+							</Select>
+						</layout:VerticalLayout>
+						<layout:VerticalLayout>
+							<Label text="Tipo de Procedimiento"/>
+							<Select id="slName3" width="150px" forceSelection="true" change="onSelectChange" items="{ path: '/ProductNames' }">
+								<core:Item key="{key}" text="{name}"/>
+							</Select>
+						</layout:VerticalLayout>
+						</layout:Grid>
+						
+						<!--2º linea-->
+						<layout:Grid defaultSpan="XL3 L6 M6 S12">
+						
+						<layout:VerticalLayout>
+							<Label text="Nº Comité"/>
+							<Select id="slName5" width="150px" forceSelection="true" change="onSelectChange" items="{ path: '/ProductNames' }">
+								<core:Item key="{key}" text="{name}"/>
+							</Select>
+						</layout:VerticalLayout>
+						<layout:VerticalLayout>
+							<Label text="Fecha Comité:"/>
+							<Select id="slName6" width="150px" forceSelection="true" change="onSelectChange" items="{ path: '/ProductNames' }">
+								<core:Item key="{key}" text="{name}"/>
+							</Select>
+						</layout:VerticalLayout>
+						<layout:VerticalLayout>
+							<Label text="Tipo de Expediente"/>
+							<Select id="slName7" width="150px" forceSelection="true" change="onSelectChange" items="{ path: '/ProductNames' }">
+								<core:Item key="{key}" text="{name}"/>
+							</Select>
+						</layout:VerticalLayout>
+						<layout:VerticalLayout>
+							<Label text="Tipo de Procedimiento"/>
+							<Select id="slName8" width="150px" forceSelection="true" change="onSelectChange" items="{ path: '/ProductNames' }">
+								<core:Item key="{key}" text="{name}"/>
+							</Select>
+						</layout:VerticalLayout>
+						</layout:Grid>
+						<!--Fin 2º línea-->
+						
+								<!--3º linea-->
+						<layout:Grid defaultSpan="XL3 L6 M6 S12">
+						
+						<layout:VerticalLayout>
+							<Label text="Estado"/>
+							<Select id="slName9" width="150px" forceSelection="true" change="onSelectChange" items="{ path: '/ProductNames' }">
+								<core:Item key="{key}" text="{name}"/>
+							</Select>
+						</layout:VerticalLayout>
+						<layout:VerticalLayout>
+							<Label text="Categoria"/>
+							<Select id="slName10" width="150px" forceSelection="true" change="onSelectChange" items="{ path: '/ProductNames' }">
+								<core:Item key="{key}" text="{name}"/>
+							</Select>
+						</layout:VerticalLayout>
+						
+						</layout:Grid>
+						<!--Fin 3º línea-->
+>>>>>>> fd89a4f 1
 					
 					
 					</f:content>
