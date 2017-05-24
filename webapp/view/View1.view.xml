@@ -1,16 +1,17 @@
-<mvc:View controllerName="CDCI1.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
-	xmlns:m="sap.m" xmlns:layout="sap.ui.layout" xmlns="sap.uxap">
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:m="sap.m" xmlns:layout="sap.ui.layout"
+	xmlns="sap.uxap" controllerName="CDCI1.controller.View1" displayBlock="true">
 	<ObjectPageLayout id="ObjectPageLayout" enableLazyLoading="false" showTitleInHeaderContent="false">
 		<headerTitle>
 			<ObjectPageHeader objectTitle="{i18n>title}">
-				<ObjectPageHeaderContent></ObjectPageHeaderContent>
 				<actions>
 					<layout:HorizontalLayout>
 						<m:Text text="{i18n>usuario}:"/>
 						<m:Text text="Nombre/apellidos"/>
-						<m:Text text="{i18n>hora}:"/>
-						<m:Text text="hh:mm"/>
 					</layout:HorizontalLayout>
+					<layout:HorizontalLayout>
+							<m:Text text="{i18n>Fecha Actual}:"/>
+							<m:Text text="hh:mm"/>
+						</layout:HorizontalLayout>
 				</actions>
 			</ObjectPageHeader>
 		</headerTitle>
@@ -23,7 +24,6 @@
 					<m:Text text="1000"/>
 				</layout:HorizontalLayout>
 			</layout:VerticalLayout>
-			<layout:VerticalLayout></layout:VerticalLayout>
 		</headerContent>
 	</ObjectPageLayout>
 </mvc:View>
