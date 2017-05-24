@@ -1,5 +1,71 @@
-<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns:layout="sap.ui.layout" xmlns="sap.m" xmlns:f="sap.f" controllerName="CDCI1.controller.View1" height="100%">
-	
+<mvc:View controllerName="CDCI1.controller.View1" height="100%" xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core"
+	xmlns:layout="sap.ui.layout" xmlns="sap.m" xmlns:f="sap.f" xmlns:t="sap.ui.table">
+
+	<f:DynamicPage id="dynamicPageId" headerExpanded="{/headerExpanded}" toggleHeaderOnTitleClick="{/titleClickable}">
+		<!-- DynamicPage Title -->
+		<f:title>
+			<f:DynamicPageTitle>
+				<f:heading>
+					<Title text="TITULO: Aplicación -   Área - Sociedad"/>
+				</f:heading>
+				<f:actions>
+					<ToolbarSpacer/>
+					<ToggleButton pressed="{/headerExpanded}" text="{path:'/headerExpanded', formatter:'.formatToggleButtonText'}" type="Transparent"/>
+					<ToggleButton pressed="{/titleClickable}" text="Title Clickable" type="Transparent"/>
+					<layout:VerticalLayout>
+						<layout:HorizontalLayout>
+							<Text text="{i18n>usuario}:"/>
+							<Text text="Nombre/apellidos"/>
+						</layout:HorizontalLayout>
+						<layout:HorizontalLayout>
+							<Text text="{i18n>fecha}:"/>
+							<Text text="dd:mm:aa"/>
+							<Text text="{i18n>hora}:"/>
+							<Text text="hh:mm"/>
+						</layout:HorizontalLayout>
+					</layout:VerticalLayout>
+					<OverflowToolbarButton icon="sap-icon://add" text="Add" type="Transparent"/>
+					<OverflowToolbarButton icon="sap-icon://edit" text="Edit" type="Transparent"/>
+					<OverflowToolbarButton icon="sap-icon://delete" text="Delete" type="Transparent"/>
+					<Button icon="sap-icon://post" text="Toggle Footer" type="Transparent" press="onToggleFooter"/>
+				</f:actions>
+			</f:DynamicPageTitle>
+		</f:title>
+		<f:header>
+			<f:DynamicPageHeader pinnable="true">
+				<f:content>
+					
+					
+					
+					</f:content>
+			</f:DynamicPageHeader>
+		</f:header>
+		<!-- DynamicPage Content -->
+		<f:content>
+			<t:Table rows="{vuelos>/FLIGHTSet}" title="Vuelos" selectionMode="MultiToggle" visibleRowCount="356">
+						<t:columns>
+							<t:Column width="11rem">
+								<Label text="Carrid"/>
+								<t:template>
+									<Text text="{vuelos>Carrid}"/>
+								</t:template>
+							</t:Column>
+							<t:Column width="11rem">
+								<Label text="Connid"/>
+								<t:template>
+									<Text text="{vuelos>Connid}"/>
+								</t:template>
+							</t:Column>
+							<t:Column width="11rem">
+								<Label text="Fldate"/>
+								<t:template>
+									<Text text="{vuelos>Fldate}"/>
+								</t:template>
+							</t:Column>
+						</t:columns>
+					</t:Table>
+		</f:content>
+	</f:DynamicPage>
 	<!--	<ObjectPageLayout id="ObjectPageLayout" enableLazyLoading="false" showTitleInHeaderContent="false">
 		<headerTitle>
 			<ObjectPageHeader objectTitle="{i18n>title}">
