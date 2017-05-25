@@ -23,7 +23,7 @@ sap.ui.define([
 			// set the device model
 			this.setModel(models.createDeviceModel(), "device");
 		/*	var mConfig = this.getMetadata().getConfig();*/
-			var sServiceUrl = this.getMetadata().getManifestEntry("sap.app").dataSources.Z001_VUELOS_PRUEBA_SRV.uri;
+			var sServiceUrl = this.getMetadata().getManifestEntry("sap.app").dataSources.z001_hello_world_srv_01.uri;
 
 			// Create and set domain model to the component
 			var oModel = new sap.ui.model.odata.ODataModel(sServiceUrl, {
@@ -36,7 +36,7 @@ sap.ui.define([
 				this.getEventBus().publish("Component", "MetadataFailed");
 			}, this);
 			this.setModel(oModel, "vuelos");
-			
+		
 		}
 	});
 });
