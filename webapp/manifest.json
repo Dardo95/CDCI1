@@ -14,12 +14,12 @@
 			"version": "0.0.0"
 		},
 		"dataSources": {
-			"z001_hello_world_srv_01": {
-				"uri": "/sflight/sap/opu/odata/sap/z001_hello_world_srv_01/",
+			"Z001_VUELOS_PRUEBA_SRV": {
+				"uri": "/sflight/sap/opu/odata/sap/Z001_VUELOS_PRUEBA_SRV/",
 				"type": "OData",
 				"settings": {
 					"odataVersion": "2.0",
-					"localUri": "localService/metadata.xml"
+					"localUri": "localService/Z001_VUELOS_PRUEBA_SRV/metadata.xml"
 				}
 			}
 		}
