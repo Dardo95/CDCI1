@@ -1,15 +1,12 @@
 <!--Moderno-->
-
-
 <mvc:View controllerName="CDCI1.controller.View1" height="100%" xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core"
 	xmlns:layout="sap.ui.layout" xmlns="sap.m" xmlns:f="sap.f" xmlns:t="sap.ui.table">
-
 	<f:DynamicPage id="dynamicPageId" headerExpanded="{/headerExpanded}" toggleHeaderOnTitleClick="{/titleClickable}">
 		<!-- DynamicPage Title -->
 		<f:title>
 			<f:DynamicPageTitle>
 				<f:heading>
-					<Title text="TITULO: Aplicación -   Área - Sociedad" class="letraGris"/>
+					<Title text="TITULO: Aplicación - Área - Sociedad" class="letraGris"/>
 				</f:heading>
 				<f:actions>
 					<ToolbarSpacer/>
@@ -39,12 +36,10 @@
 				<f:content>
 					<layout:Grid defaultSpan="XL3 L6 M6 S12" class="blue">
 						<layout:VerticalLayout>
-
-							<Label text="Nº Comité  :" class="letraBlaca"/>
-							<MultiComboBox width="150px"
-						items="{ path: '{vuelos>/FLISet}' }">
-						<core:ListItem text="{vuelos>Carrid}"/>
-					</MultiComboBox>
+							<Label text="Nº Comité :" class="letraBlaca"/>
+							<MultiComboBox width="150px" items="{vuelos>/FLISet}">
+								<core:ListItem text="{vuelos>Carrid}"/>
+							</MultiComboBox>
 						</layout:VerticalLayout>
 						<layout:VerticalLayout>
 							<Label text="Fecha Comité:" class="letraBlaca"/>
@@ -64,11 +59,9 @@
 								<core:Item key="{key}" text="{name}"/>
 							</Select>
 						</layout:VerticalLayout>
-						</layout:Grid>
-						
-						<!--2º linea-->
-						<layout:Grid defaultSpan="XL3 L6 M6 S12" class="blue">
-						
+					</layout:Grid>
+					<!--2º linea-->
+					<layout:Grid defaultSpan="XL3 L6 M6 S12" class="blue">
 						<layout:VerticalLayout>
 							<Label text="Tipo de Asignación" class="letraBlaca"/>
 							<Select id="slName5" width="150px" forceSelection="true" change="onSelectChange" items="{ path: '/ProductNames' }" class="orange">
@@ -93,12 +86,10 @@
 								<core:Item key="{key}" text="{name}"/>
 							</Select>
 						</layout:VerticalLayout>
-						</layout:Grid>
-						<!--Fin 2º línea-->
-						
-								<!--3º linea-->
-						<layout:Grid defaultSpan="XL3 L6 M6 S12" class="blue">
-						
+					</layout:Grid>
+					<!--Fin 2º línea-->
+					<!--3º linea-->
+					<layout:Grid defaultSpan="XL3 L6 M6 S12" class="blue">
 						<layout:VerticalLayout>
 							<Label text="Estado" class="letraBlaca"/>
 							<Select id="slName9" width="150px" forceSelection="true" change="onSelectChange" items="{ path: '/ProductNames' }" class="orange">
@@ -111,13 +102,10 @@
 								<core:Item key="{key}" text="{name}"/>
 							</Select>
 						</layout:VerticalLayout>
-						
-						</layout:Grid>
-						<!--Fin 3º línea-->
-						
-							<!--4º linea-->
-						<layout:Grid defaultSpan="XL3 L6 M6 S12" class="blue">
-						
+					</layout:Grid>
+					<!--Fin 3º línea-->
+					<!--4º linea-->
+					<layout:Grid defaultSpan="XL3 L6 M6 S12" class="blue">
 						<layout:VerticalLayout>
 							<Label text="Fecha Comité: Desde" class="letraBlaca"/>
 							<Select id="slName13" width="150px" forceSelection="true" change="onSelectChange" items="{ path: '/ProductNames' }" class="orange">
@@ -136,13 +124,10 @@
 								<core:Item key="{key}" text="{name}"/>
 							</Select>
 						</layout:VerticalLayout>
-						
-						</layout:Grid>
-						<!--Fin 4º línea-->
-						
-										<!--5º linea-->
-						<layout:Grid defaultSpan="XL3 L6 M6 S12" class="blue">
-						
+					</layout:Grid>
+					<!--Fin 4º línea-->
+					<!--5º linea-->
+					<layout:Grid defaultSpan="XL3 L6 M6 S12" class="blue">
 						<layout:VerticalLayout>
 							<Label text="Hasta" class="letraBlaca"/>
 							<Select id="slName16" width="150px" forceSelection="true" change="onSelectChange" items="{ path: '/ProductNames' }" class="orange">
@@ -161,13 +146,10 @@
 								<core:Item key="{key}" text="{name}"/>
 							</Select>
 						</layout:VerticalLayout>
-						
-						</layout:Grid>
-						<!--Fin 5º línea-->
-					
-					
-					</f:content>
-		</f:DynamicPageHeader>
+					</layout:Grid>
+					<!--Fin 5º línea-->
+				</f:content>
+			</f:DynamicPageHeader>
 		</f:header>
 		<!-- DynamicPage Content -->
 		<f:content>
@@ -175,8 +157,8 @@
 				<t:columns>
 					<t:Column sorted="true">
 						<!--<t:multiLabels>-->
-							<!--<Label text="{i18n>listadenecesidades}"/>-->
-							<Label text="Carrid"/>
+						<!--<Label text="{i18n>listadenecesidades}"/>-->
+						<Label text="Carrid"/>
 						<!--</t:multiLabels>-->
 						<t:template>
 							<Text text="{vuelos>Carrid}"/>
@@ -233,31 +215,4 @@
 			</t:Table>
 		</f:content>
 	</f:DynamicPage>
-	<!--	<ObjectPageLayout id="ObjectPageLayout" enableLazyLoading="false" showTitleInHeaderContent="false">
-		<headerTitle>
-			<ObjectPageHeader objectTitle="{i18n>title}">
-				<ObjectPageHeaderContent></ObjectPageHeaderContent>
-				<actions>
-					<layout:HorizontalLayout>
-						<m:Text text="{i18n>usuario}:"/>
-						<m:Text text="Nombre/apellidos"/>
-						<m:Text text="{i18n>hora}:"/>
-						<m:Text text="hh:mm"/>
-					</layout:HorizontalLayout>
-				</actions>
-			</ObjectPageHeader>
-		</headerTitle>
-		<headerContent>
-			<layout:VerticalLayout>
-				<layout:HorizontalLayout>
-					<m:Text id="area" text="{i18n>area}:"/>
-					<m:Text text="area"/>
-					<m:Text text="{i18n>sociedad}:"/>
-					<m:Text text="1000"/>
-				</layout:HorizontalLayout>
-			</layout:VerticalLayout>
-			<layout:VerticalLayout></layout:VerticalLayout>
-		</headerContent>
-
-	</ObjectPageLayout>-->
 </mvc:View>
