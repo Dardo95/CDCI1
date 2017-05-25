@@ -35,7 +35,7 @@
 
 							<Label text="Nº Comité  :"/>
 							<MultiComboBox width="150px"
-						items="{ path: '{vuelos>/FLISet}' }">
+						items="{vuelos>/FLISet}">
 						<core:ListItem text="{vuelos>Carrid}"/>
 					</MultiComboBox>
 						</layout:VerticalLayout>
